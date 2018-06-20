@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="/proyecto/css/main.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="contRaiz">
+		<form id="frmLogin" method="post">
+			<legend>Abc Productos</legend>
+			<img src="/proyecto/src/user.png">
+			<legend>Iniciar Sesi&oacute;n</legend>
+				<div id="data">
+				       <input type="text" name="txtUsuario" id="txtUsuario" placeholder="Ingresa usuario" required>
+					   <input type="password" minlength="5" name="txtPassword" placeholder="Ingresa password" id="txtPassword" required>
+					<button type="submit"><span></span>Ingresar</button>
+			   </div>
+			   <legend id="infoRegistrar">¿No tienes cuenta?<a href="#miModal"> Registrate</a></legend>
+		</form>
+	</div>
+
+	<div id="miModal" class="modal">
+	  <div class="modal-contenido">
+	    <a href="#">X</a>
+	    <h2>Registrarse</h2>
+	    <span>Nombre: </span><input type="text" name="txtNomnbre" />
+	    <span>Apellido: </span><input type="text" name="txtApellido" />
+	    <span>Edad: </span><input type="number" maxlength="2" name="txtEdad">
+	  </div>  
+	</div>
+	<script
+     src="https://code.jquery.com/jquery-3.3.1.js"
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous">
+    </script>
+	<script type="text/javascript" src="/proyecto/src/main.js"></script>
+</body>
+</html>

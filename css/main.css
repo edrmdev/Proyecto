@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #fff;
+	background-image: url(../src/bg.png);
+	background-size: cover;
+}
+
+body form{
+  margin: 0 auto;
+  width: 500px;
+  height: 330px;
+  background-color: #ffff;
+  opacity: 0.9;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 10px #888888;
+}
+
+body form img{
+   width: 40%;
+   height: 40%;
+}
+
+body form legend{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body form #data input{
+	width: 180px;
+	height: 40px;
+	border-left: 3px solid #000;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: none;
+	border-left: 5px solid #000;
+	background-color: #F3EBEBFF;
+}
+
+body form #data button{
+	width: 185px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 2.5px 5px #888888;
+	transition: 1s;
+	margin-bottom: 6px;
+}
+
+body form #data button:hover{
+	box-shadow: 0px 0px #888888;
+}
+
+body form #data button:active{
+	box-shadow: 0px 0px #888888;
+}
+
+
+/*Validaciones*/
+.validError{
+	border-color: #F32207FF;
+	color:red;
+}
+
+#infoRegistrar{
+	
+}
+
+.modal-contenido{
+  background-color: #FFF;
+  width:300px;
+  padding: 10px 20px;
+  margin: 10% auto;
+  position: relative;
+  text-align: center;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
